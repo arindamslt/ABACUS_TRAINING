@@ -43,395 +43,106 @@ TEST
 PACKAGE
 
 
-public class Customer {
-private String cid;
-private String cname;
-private String cphno;
-public Customer()
-{
-	
-}
-public Customer(String cid,String cname,String cphno)
-{
-	this.cid=cid;
-	this.cname=cname;
-	this.cphno=cphno;
-}
-}
-
-LINKING BETWEEN THE OBJECT
-==============================================================
-
-
-@Component(value="bs")
-public class Book {
-	@Value("B1")
-private String bid;
-	@Value("CORE JAVA")
-private String bname;
-	@Value("700.00")
-private Double price;
-	public Book()
-	{
-		
-	}
-	public Book(String bid,String bname,Double price)
-	{
-		this.bid=bid;
-		this.bname=bname;
-		this.price=price;
-	}
-	
-}
-
-
-DATE:14.03.2024
-======================================================================================================
-@Component=======CREATING THE OBJECT
-@ComponentScan======SCAN THE BASE PACKAGES
-@Autowire==========LINKING BETWEEN THE OBJECTS
-@Data==============getter  setter toString()
-@NoArgsConstructor====CONSTRUCTOR WITHOUT PARAMETER
-@AllArgsConstructor====CONSTRUCTOR WITH ALL PARAMETER
-
-
-DBMS
-===============================================================
-DBMS===DATABASE MANAGEMENT SYSTEM
-=================================================================
-DATA
-FIELDS
-RECORDS/TUPLE
-TABLE
-DATABASE
-DATABASE IS COLLECTION OF INTERELATED TABLES OR DATA
-ADVANTAGE
-============================
-MINIMIZE DATA REDUNDENCY
-SECURITY RESTRICTION
-DATA CAN BE SHARED
-INTRIGRITY  CONSTRAINT
-
-DBMS=DATABASE+SQL
-
-SQL=STRUCTURED QUERY LANGUAGE
-IT IS ALSO CALLED NON PROCEDURAL LANGUAGE
-ONLY WHAT PART IS KNOWN TO US
-RDBMS==RELATIONAL DATABASE MANAGEMENT SYSTEM
-SOFTWARE==MYSQL,ORACLE,SQLSERVER
-
-DATA TYPE
-=====================================
-VARCHAR==SUPPORT ALPHANUMERIC===A123
-INT===NUMBER
-DECIMAL===DECIMAL PLACES
-DATE===YYYY-MM-DD
-NAME  VARCHAR(25)================
-DECIMAL(7,2)===99999.99
-CONSTRAINTS
-=============================================================================
-BEFORE INSERTINGN DATA INTO TABLE YOU HAVE TO SATISFY CERTAIN RULES AND REGULATIONS CALLED CONSTRAINTS
-1.PRIMARY KEY====DOES NOT ACCEPT DUPLICATE VALUE AS WELL AS NULL VALUE
-ROLLNO
-2.NOT NULL= IT ACCEPT DUPLICATE VALUE BUT DOES NOT ACCCEPT NULL VALUE
-3.CHECK CONSTRAINTS
-4.FOREIGN KEY===IT WILL ACCEPT OTHER TABLE PRIMARY KEY VALUE ONLY
- SQL COMMANDS
-====================
-DDL==DATA DEFINATION LANGUAGE===CREATE,ALTER,RENAME,TRUNCATE,DROP
-DML==DATA MANIPULATION LANGUAGE===INSERT,UPDATE,DELETE,MERGE
-DATE RETRIEVAL===SELECT
-TCL==TRANSACTION CONTROL LANGUAGE====COMMIT,ROLLBACK
-DCL==DATA CONTROL LANGUAGE===GRANT,REVOKE
-MYSQL LOGIN
-======================
-MYSQL COMMAND LINE RUNNER
-MYSQL WORKBENCH
-COMMAND PROMPT
-
-
-TABLE
-=====================
-DEPT
-============================
-FIELD    DATATYPE     SIZE      CONSTRAINTS
-=================================================
-DEPTID    VARCHAR     10         PRIMARY KEY
-DNAME     VARCHAR     25         NOT NULL
-LOC       VARCHAR     25 
-===================================================
-TABLE:PURCHASE
+SPRING
+==================================================================================
+1.DESKTOP APPLICATION:CORE JAVA,AWT,SWING,SPRING=========================JAR FILE
+2.WEB APPLICATION:SERVLET,JSP,HTML,CSS,JAVASCRIPT,SPRING=================WAR FILE
+3.ENTERPRISE APPLICATION:EJB,SPRING=====================================EAR FILE(JAR+WAR)
+DEFINATION
+===============================
+SPRING IS AN OPEN SOURCE LIGHT WEIGHT DEPENDENCY INJECTION BASED FRAMEWORK SOFTWARE TO DEVELOP JAVA/JEE
+BASED ENTERPRISE APPLICATION
+HEAVY WEIGHT
+==============================
+.java=====compile===.class====container===.java===.class==o/p
+ex:jsp
+LIGHT WEIGHT
+================================
+.java===compile===.class===container===.class===o/p
+POJO CLASS==PLAIN OLD JAVA OBJECT
+GETTER METHOD SETTER METHOD CONSTRUCTOR WILL BE THERE
+XML/ANNOATION
+FEATURES OF THE SPRING
+===========================================
+1.SPRING IS USED FOR DISTRIBUTED AND WEB APPLICATION
+2.SPRING SUPPORT CONTAINER SYSTEM
 ============================================
-ORDERID    INT    3         PRIMARY KEY
-ORDERDT    DATE             TODAY'S DATE  YYYY-MM-DD
-INM        VARCHAR    25
-PRICE      DECIMAL    11,2
+SCAN THE CLASSES
+CREATE OBEJCT
+PROVIDE DATA TO THE OBJECT
+LINK THE OBJECT
+DESTROY THE OBJECT
+===================================================================
+INSTANCE VARIBALE IN JAVA
+=======================================================
+class Test
+{
+  private String cid;//instance variable
+public void add(int x,int y)
+{
 
-CREATE TABLE PURCHASE
-(ORDERID  INT(3) AUTO_INCREMENT PRIMARY KEY,
- ORDERDT  DATE   DEFAULT (CURRENT_DATE),
- INM       VARCHAR(25),
- PRICE     DECIMAL(11,2));
 
-CREATE TABLE PURCHASE
-(ORDERID  INT(3) AUTO_INCREMENT PRIMARY KEY,
- ORDERDT  DATE   DEFAULT (CURRENT_DATE),
- INM       VARCHAR(25),
- PRICE     DECIMAL(11,2));
+}
+IN CASE OF SPRING CLASS WE DECLAED ARE CALLED SPRINGBEAN
+==============================================
+SPRING BEAN===CLASS+RULES GIVEN BY SPRING
+INSTANCE VARIABLE IN SPRING ARE CALLED DEPENDENCY
 
-Enter password: *******
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 9
-Server version: 8.0.35 MySQL Community Server - GPL
+DEVELOPER
+=======================
+TYPES OF DEPENDENCY INJECTION
+=============================
+1.PRIMITITIVE TYPE
+2.COLLECTION TYPES
+3.REFERENCE TYPE
+FRAMEWORK
+=================================================================================
+TECHNOLOGIES + DESIGN PATTERN
+MESSAGE=====JMS
+MAILING=====JAVAMAIL
+DATABASE====JDBC API
+DESIGN PATTERN
+============================================
+WELL APPROVED SOLUTION
 
-Copyright (c) 2000, 2023, Oracle and/or its affiliates.
 
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
+RAD===RAPID APPLICATION DEVELOPMENT
 
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+TWO TYPES OF CONTAINER
+=========================
+1.BEANFACTORY=========XML
+2.APPLICATION CONTEXT===XML JAVA ANNOTATION===ALSO CALLED INVERSION CONTROL(IOC)
+MODULE OF SPRING
+========================
+SPRING CORE
+SPRING JDBC
+SPRING AOP
+SPRING ORM
+SPRING CONTEXT
+SPRING WEB==============
+SPRING MVC=============    SPRING WEB MVC
+SPRING CORE 
+===============================
+SPRING CORE PROVIDES RULES FOR CREATING THE SPRING APPLICATION
+RULES
+========================
+ALL INSTANCE VARIABLE ARE PRIVATE
+GETTTER AND SETTER METHOD
+CONSTRUCTOR
+PARAMETERISED CONSTRUCTOR
+USE TOSTRING(),HASHCODE(),EQUALS()
+USE ANNOTATION
 
-mysql> CREATE DATABASE AIEM;
-Query OK, 1 row affected (0.03 sec)
-
-mysql> SHOW DATABASES;
-+--------------------+
-| Database           |
-+--------------------+
-| abs                |
-| aec                |
-| aiem               |
-| bootreact          |
-| dbs                |
-| foodapp            |
-| hbdb               |
-| hbdbs              |
-| information_schema |
-| mysql              |
-| performance_schema |
-| sys                |
-| test               |
-+--------------------+
-13 rows in set (0.03 sec)
-
-mysql> USE AIEM;
-Database changed
-mysql> SHOW TABLES;
-Empty set (0.02 sec)
-
-mysql>
-mysql>
-mysql>
-mysql>
-mysql> CREATE TABLE DEPT
-    -> (DEPTID VARCHAR(10) PRIMARY KEY,
-    ->  DNAME  VARCHAR(25) NOT NULL,
-    ->  LOC    VARCHAR(25));
-Query OK, 0 rows affected (0.04 sec)
-
-mysql> SHOW TABLES;
-+----------------+
-| Tables_in_aiem |
-+----------------+
-| dept           |
-+----------------+
-1 row in set (0.00 sec)
-
-mysql> DESC DEPT;
-+--------+-------------+------+-----+---------+-------+
-| Field  | Type        | Null | Key | Default | Extra |
-+--------+-------------+------+-----+---------+-------+
-| DEPTID | varchar(10) | NO   | PRI | NULL    |       |
-| DNAME  | varchar(25) | NO   |     | NULL    |       |
-| LOC    | varchar(25) | YES  |     | NULL    |       |
-+--------+-------------+------+-----+---------+-------+
-3 rows in set (0.00 sec)
-
-mysql> INSERT INTO DEPT VALUES('D1','HR','KOLKATA');
-Query OK, 1 row affected (0.03 sec)
-
-mysql> SELECT * FROM DEPT;
-+--------+-------+---------+
-| DEPTID | DNAME | LOC     |
-+--------+-------+---------+
-| D1     | HR    | KOLKATA |
-+--------+-------+---------+
-1 row in set (0.00 sec)
-
-mysql> INSERT INTO DEPT VALUES('D1','HR','KOLKATA');
-ERROR 1062 (23000): Duplicate entry 'D1' for key 'dept.PRIMARY'
-mysql> INSERT INTO DEPT VALUES('D2',NULL,'KOLKATA');
-ERROR 1048 (23000): Column 'DNAME' cannot be null
-mysql> INSERT INTO DEPT VALUES('D2','FINANCE','MUMBAI');
-Query OK, 1 row affected (0.02 sec)
-
-mysql> SELECT * FROM DEPT;
-+--------+---------+---------+
-| DEPTID | DNAME   | LOC     |
-+--------+---------+---------+
-| D1     | HR      | KOLKATA |
-| D2     | FINANCE | MUMBAI  |
-+--------+---------+---------+
-2 rows in set (0.00 sec)
-
-mysql> UPDATE DEPT SET DNAME='MKTG',LOC='CHENNAI' WHERE DEPTID='D1';
-Query OK, 1 row affected (0.02 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-mysql> SELECT * FROM DEPT;
-+--------+---------+---------+
-| DEPTID | DNAME   | LOC     |
-+--------+---------+---------+
-| D1     | MKTG    | CHENNAI |
-| D2     | FINANCE | MUMBAI  |
-+--------+---------+---------+
-2 rows in set (0.00 sec)
-
-mysql> DELETE FROM DEPT WHERE DEPTID='D2';
-Query OK, 1 row affected (0.03 sec)
-
-mysql> SELECT * FROM DEPT;
-+--------+-------+---------+
-| DEPTID | DNAME | LOC     |
-+--------+-------+---------+
-| D1     | MKTG  | CHENNAI |
-+--------+-------+---------+
-1 row in set (0.00 sec)
-
-mysql> INSERT INTO DEPT VALUES('D2','FINANCE','MUMBAI');
-Query OK, 1 row affected (0.02 sec)
-
-mysql> INSERT INTO DEPT VALUES('D3','IT','KOLKATA');
-Query OK, 1 row affected (0.02 sec)
-
-mysql> INSERT INTO DEPT VALUES('D4','MKTG','KOLKATA');
-Query OK, 1 row affected (0.02 sec)
-
-mysql> INSERT INTO DEPT VALUES('D5','ACCOUNTS','CHENNAI');
-Query OK, 1 row affected (0.00 sec)
-
-mysql> INSERT INTO DEPT VALUES('D6','OPERATIONS','HYDRABAD');
-Query OK, 1 row affected (0.02 sec)
-
-mysql> SELECT * FROM DEPT;
-+--------+------------+----------+
-| DEPTID | DNAME      | LOC      |
-+--------+------------+----------+
-| D1     | MKTG       | CHENNAI  |
-| D2     | FINANCE    | MUMBAI   |
-| D3     | IT         | KOLKATA  |
-| D4     | MKTG       | KOLKATA  |
-| D5     | ACCOUNTS   | CHENNAI  |
-| D6     | OPERATIONS | HYDRABAD |
-+--------+------------+----------+
-6 rows in set (0.00 sec)
-
-mysql> SELECT * FROM DEPT WHERE LOC='CHENNAI';
-+--------+----------+---------+
-| DEPTID | DNAME    | LOC     |
-+--------+----------+---------+
-| D1     | MKTG     | CHENNAI |
-| D5     | ACCOUNTS | CHENNAI |
-+--------+----------+---------+
-2 rows in set (0.00 sec)
-
-mysql> SELECT * FROM DEPT WHERE DNAME='FINANCE';
-+--------+---------+--------+
-| DEPTID | DNAME   | LOC    |
-+--------+---------+--------+
-| D2     | FINANCE | MUMBAI |
-+--------+---------+--------+
-1 row in set (0.00 sec)
-
-mysql> SELECT * FROM DEPT WHERE LOC IN('CHENNAI','KOLKATA');
-+--------+----------+---------+
-| DEPTID | DNAME    | LOC     |
-+--------+----------+---------+
-| D1     | MKTG     | CHENNAI |
-| D3     | IT       | KOLKATA |
-| D4     | MKTG     | KOLKATA |
-| D5     | ACCOUNTS | CHENNAI |
-+--------+----------+---------+
-4 rows in set (0.00 sec)
-
-mysql> SELECT * FROM DEPT WHERE LOC NOT IN('CHENNAI','KOLKATA');
-+--------+------------+----------+
-| DEPTID | DNAME      | LOC      |
-+--------+------------+----------+
-| D2     | FINANCE    | MUMBAI   |
-| D6     | OPERATIONS | HYDRABAD |
-+--------+------------+----------+
-2 rows in set (0.00 sec)
-
-mysql> SELECT * FROM DEPT;
-+--------+------------+----------+
-| DEPTID | DNAME      | LOC      |
-+--------+------------+----------+
-| D1     | MKTG       | CHENNAI  |
-| D2     | FINANCE    | MUMBAI   |
-| D3     | IT         | KOLKATA  |
-| D4     | MKTG       | KOLKATA  |
-| D5     | ACCOUNTS   | CHENNAI  |
-| D6     | OPERATIONS | HYDRABAD |
-+--------+------------+----------+
-6 rows in set (0.00 sec)
-
-mysql> SELECT * FROM DEPT WHERE DNAME='IT' AND LOC='KOLKATA';
-+--------+-------+---------+
-| DEPTID | DNAME | LOC     |
-+--------+-------+---------+
-| D3     | IT    | KOLKATA |
-+--------+-------+---------+
-1 row in set (0.00 sec)
-
-mysql> SELECT * FROM DEPT WHERE DNAME='IT' OR LOC='KOLKATA';
-+--------+-------+---------+
-| DEPTID | DNAME | LOC     |
-+--------+-------+---------+
-| D3     | IT    | KOLKATA |
-| D4     | MKTG  | KOLKATA |
-+--------+-------+---------+
-2 rows in set (0.00 sec)
-
-mysql> CREATE TABLE PURCHASE
-    -> (ORDERID  INT(3) AUTO_INCREMENT PRIMARY KEY,
-    ->  ORDERDT  DATE   DEFAULT (CURRENT_DATE),
-    ->  INM       VARCHAR(25),
-    ->  PRICE     NUMBER(11,2));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NUMBER(11,2))' at line 5
-mysql> CREATE TABLE PURCHASE
-    -> (ORDERID  INT(3) AUTO_INCREMENT PRIMARY KEY,
-    ->  ORDERDT  DATE   DEFAULT (CURRENT_DATE),
-    ->  INM       VARCHAR(25),
-    ->  PRICE     DECIMAL(11,2));
-Query OK, 0 rows affected, 1 warning (0.04 sec)
-
-mysql> INSERT INTO PURCHASE(INM,PRICE) VALUES('TV',25000.00);
-Query OK, 1 row affected (0.03 sec)
-
-mysql> INSERT INTO PURCHASE(INM,PRICE) VALUES('LAPTOP',45000.00);
-Query OK, 1 row affected (0.03 sec)
-
-mysql> SELECT * FROM PURCHASE;
-+---------+------------+--------+----------+
-| ORDERID | ORDERDT    | INM    | PRICE    |
-+---------+------------+--------+----------+
-|       1 | 2024-03-14 | TV     | 25000.00 |
-|       2 | 2024-03-14 | LAPTOP | 45000.00 |
-+---------+------------+--------+----------+
-2 rows in set (0.00 sec)
-========================================================================================================================
+TYPES OF INJECTION
+=======================
+SETTER INJECTION
+CONSTRUCTOR INJECTION
+LOOKUP METHOD INJECTION
+INTERFACE INJECTION
 
 
 
-
-
-
-
-
-
-
+   
 
 
 
