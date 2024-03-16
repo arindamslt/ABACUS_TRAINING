@@ -185,9 +185,26 @@ MAPPING OF TABLES
 3.MANY TO ONE MAPPING
 4.MANY TO MANY MAPPING
 ====================================================================================
+CRUD OPERATION
+===============================
+INSERT UPDATE DELETE FETCH
+==========================================================================================
 
+import lombok.NoArgsConstructor;
 
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class Product {
+	@Id
+	@Column(length = 10)
+private String pid;
+	@Column(length = 25,nullable = false)
+private String pname;
+private Integer pqty;
+private Double price;
+}
 
 
    
