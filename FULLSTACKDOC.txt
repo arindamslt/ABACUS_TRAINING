@@ -206,6 +206,40 @@ private Integer pqty;
 private Double price;
 }
 
+FETCH DATA FROM DATABASE
+====================================
+1.HQL==HIBERNATE QUERY LANGUAGE======================KNOWS THE CLASS NAME NOT THE TABLE NAME
+2.JPQL===JAVA PERSISTANCE QUERY LANGUAGE=============KNOWS THE CLASS NAME NOT THE TABLE NAME
+3.NATIVE SQL=====NORMAL SQL========================IT KNOWS ONLY TABLE NAME
+
+HQL
+=================================
+FROM Product;
+JPQL
+==============
+Select P from Product p;
+NATIVE SQL
+======================
+select * from product;
+
+System.out.println("DELETE DATA====================");
+ Product pds=em.find(Product.class,"P6");//finding the p6 is available or not
+ if(pds!=null)
+ {
+	 em.remove(pds);
+ }
+ System.out.println("FETCH DATA===============");
+ String hql="from Product";
+ Query query=em.createQuery(hql);
+ List<Product> plist=query.getResultList();
+ plist.stream().forEach(System.out::println);
+tx.commit();//saving data into database
+emf.close();
+
+
+
+
+
 
    
 
