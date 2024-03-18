@@ -236,6 +236,123 @@ System.out.println("DELETE DATA====================");
 tx.commit();//saving data into database
 emf.close();
 
+DATE:18.03.2024
+=============================================================================================
+1.TOOL===MAVEN===PROJECT BUILDING TOOL
+2.SPRING
+3.DBMS USING MYSQL
+4.HIBERNATE
+DEVELOP THE BACKEND APPLICATION USING THE SPRING BOOT
+==================================================================================
+LIMITATION OF SPRING
+================================================================
+1.WE NEED LOT OF LIBRARITIES OR JAR FILES WITH COMPATABLE VERSION
+2.WE NEED TO CONFIGURE LOT OF THINGS
+3.EXTERNAL SERVER
+SPRING+HIBERNATE+MAVEN+DATABASE+WEB
+
+SPRING BOOT IS NOT A MODULE .IT IS ARCHECTURAL STYLE DEVELOP ON THE TOP OF THE SPRING
+SPRING BOOT IS USED FOR DISTRIBUTED APPLICATION AND FOR RAPID DEVELOPMENT
+
+ADVANTAGE
+=====================================
+1.STARTER DEPENDENCY
+===========================================================
+GROUP  OF RELATED JAR FILES OF DIFFERENT MODULE GROUP TOGETHER INTO SINGLE MODULE
+2.AUTOCONFIGURATION
+=====================================================================
+HERE LOT OF THINGS ARE AUTOCONFIGURED
+3.EMBEDDED SERVER
+
+WEBSERVICES
+========================================================================
+WEBSERVICES ARE USE TO   COMMUNICATE BETWEEN TWO INTEROPERARBLE APPLICATIONS
+FOR EX:JAVA=====DOT NET
+TYPES OF WEBSERVICES
+=====================================
+1.SOAP===SIMPLE OBJECT ACCESS PROTOCOL
+HERE WE CAN EXCHANGE DATA IN FORM OF XML ONLY
+2.REST===REPRESENTATION STATE TRANSFER
+==================================
+HERE WE CAN EXCHANGE DATA IN FORM OF JSON AND  XML 
+JSON 
+=================================
+JAVA SCRIPT OBJECT NOTATION
+==================================
+{
+
+   "CID":"C1",
+    "CNAME":"ANUP",
+    "PHNO":656556
+
+}
+==========================================================
+RESOURCE BASED URL
+==================================
+http://www.abc.com/uname/arin/pass/565665
+                  ===========
+                  path parameter
+ACTION BASED URL
+================================
+http://www.abc.com/uname?arin&pass?74773
+                   ===============
+                    request parameter
+
+HTTP METHODS
+=============================================================
+GET====GET THE DATA
+POST===POST THE DATA/ADD DATA
+PUT====UPDATE DATA
+DELETE===DELETE DATA
+PATCH
+===========================================================
+HTTP ERROR
+============================
+404===NOT FOUND
+500===INTERNAL SERVER ERROR
+
+200=====OK
+===================================================================
+REST API TOOL
+================================
+POSTMAN
+==============================================
+@SpringBootApplication
+==========================
+@componentSacn
+@EnableAutoConfiguration
+@Configuration
+
+REST API APPLICATION IN SPRING BOOT
+==================================
+STEP1
+=====================================
+CREATE DATABASE IN MYSQL
+============================================
+mysql> CREATE DATABASE RESTDB;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE RESTDB;
+Database changed
+mysql> SHOW TABLES;
+Empty set (0.01 sec)
+===================================================================
+STEP2 
+====================================================
+CREATE A SPRING BOOT PROJECT:RESTAPI
+DEPENDENCY
+=======================
+LOMBOK
+MYSQL
+SPRING DATA JPA
+WEB
+SPRING BOOT DEV TOOLS
+
+
+
+
+
+
 
 
 
