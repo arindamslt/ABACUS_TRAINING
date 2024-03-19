@@ -349,8 +349,22 @@ WEB
 SPRING BOOT DEV TOOLS
 
 
+http://localhost:1004/order/fetch======  GET
+http://localhost:1004/order/add======= POST
 
 
+public Order updateData(Integer orderid,Order order)
+	{
+		Order orders=orepo.findById(orderid).orElse(null);
+		if(orders!=null)
+		{
+			orders.setOrderqty(order.getOrderqty());
+			orders.setPname(order.getPname());
+			orders.setPrice(order.getPrice());
+			orepo.save(orders);
+		}
+		return orders;
+	}
 
 
 
