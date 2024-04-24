@@ -1,0 +1,171 @@
+  DATE:23.04.2024
+===============================================================================
+ FRONT END APPLICATION
+================================================
+HTML,CSS,JAVASCRIPT,ANGULAR,REACT JS,VUE JS.NEXT JS
+WHAT IS MJAVASCRIPT?
+================================================================================
+JAVASCRIPT IS A PROGRAMMING LANGUAGE.EARLIER IT IS CALLED SCRIPTING LANGUAGE.
+ NOW JAVASCRIPT CAN COMMUNICATE WITH DATABASE,APPLICATION SERVER.
+PURPOSE OF JAVA SCRIPT
+========================================================
+ 1.DYNAMIC WEB USER INTERFACE
+  2.CLEINT SIDE AND SERVER SIDE VALAIDATION
+  3.COMMUNICATE WITH FROND END AND BACKEND APPLICATION
+APPLICATION
+==============================================
+1.WEBAPPLICATION
+2.MOBILE APPLICATION
+3.STAND ALONE APPLICATION
+4.ML APPLICATION
+============================================================
+JAVASCRIPT RUN TIME ENVIRONMENT====NODEJS
+IDE ==VSCODE
+===========================================================
+VARIABLE IN JS
+========================================================
+NAMED STORE LOCATION
+USING SCOPE VARIABLE
+==================================================
+LET,VAR,CONST
+DATATYPES
+=======================================================
+1.PRMITIVE TYPES:number,string,boolean,bigint,null,undefined
+2.NON PRIMITIVE DATATYE======OBJECT
+ARRAY IS OBJECT TYPE
+
+FUNCTION
+==============================================
+1.NORMAL FUNCTION
+2.PARAMETERISED FUNCTION
+3.FUNCTION WITH RETURN TYPE
+4.CALLBACK FUNCTION
+5.HIGHER ORDER FUNCTION
+6.ANNONYMOUS FUNCTION
+7.ARROW FUNCTION
+==========================================================================================================
+ES6
+====================================================
+ECMA SCRIPT
+1.SPREAD OPERATOR
+2.REST PARAMETER
+3.DESTRUCTRUCTING OF OBJECT
+4.ARROW FUNCTION
+5.ARROW FUNCTION WITH MAP() FOREACH() FILTER()
+6.PROMISE OBJECT
+7.LET VS VAR VS CONST
+
+DOM
+==============================================
+DOCUMENT OBJECT MODEL
+
+DATE:24.04.2024
+=========================================================================
+UI DESIGN  BY MEANS OF JAVASCRIPT
+
+REACT JS
+============================================================================
+REACT JS IS A JAVASCRIPT LIBRARY.JAVA SCRIPT LIBRARY IS A COLLECTION OF CLASSES AND FUNCTIONS WHICH IS DEFINED
+BY JAVASCRIPT.
+REACT CAN USED FOR CREATING THE USER INTERFACE.
+REACT+OTHER LIBRARIES =====FRONT END DEVELOPMENT
+document.createElement("button")===== CREATE button======load in  to DOM===print ON THE SCREEN
+
+IN CASE OF REACT
+======================================================
+REACT.createElement("button",null,"CLICKED")======CREATE A BUTTON====CALLED REACT ELEMENT
+====   =============
+library  function
+REACTDOM.render(document.getElementId("root"))========REACTDOM INTERGRATE WITH DOM==THEN IT WILL PRINT ON SCREEN
+
+HTML+CSS+JAVASCRIPT=====REACT
+CRA TOOL  
+
+JSX
+====================================================
+JSX PROVIDES 99% SIMILAR TO THE HTML
+FOR DOING THAT WE NEED BABEL COMPILER
+THERE TWO TYPES OF COMPONENT
+=======================================
+1.CLASS COMPONENT
+2.FUNCTIONAL COMPONENT
+FUNCATIONAL COMPONENT STARTING WITH CAPITAL LETTER
+JSX===COMPILE==BABEL=====REACT DOM===INTEGRATE===DOM
+EX:function CreateUi()
+{
+    return(
+           <div>
+
+          </div>
+
+
+    );
+}
+================================================================================================
+REACT HOOKS
+==========================================================================================
+REACT HOOK IS A SPECIAL TYPE OF FUNCTION USED FOR SPECIAL PURPOSE.
+GENERALLY IT IS USED TO DIFFERNCIATE  IN FUNACTIONAL COMPONENT TO THE REUSE PART
+1.useState();
+
+let[state,setState]=useState("");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'
+
+
+
+
+
+
+
