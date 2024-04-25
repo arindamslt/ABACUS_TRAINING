@@ -110,6 +110,22 @@ GENERALLY IT IS USED TO DIFFERNCIATE  IN FUNACTIONAL COMPONENT TO THE REUSE PART
 
 let[state,setState]=useState("");
 
+DATE:25.04.2024
+============================================================================================
+IF I WANT TO SHARE THE DATA BETWEEN PARENT AND CHILD
+========================================================================================
+WAYS
+======================================================================
+1.PROPS
+2.CONTEXT API
+3.REDUX
+PROPS
+=================================================================
+WHEN WE WANT TO SHARE THE DATA BETWEN THE PARENT CHILD COMPONENT
+
+PROPS DRILLING
+==========================================
+
 
 
 

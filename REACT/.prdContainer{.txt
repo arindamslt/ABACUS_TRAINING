@@ -1,0 +1,24 @@
+.prdContainer{
+    display: flex;
+    }
+    .prdlftContainer{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        color: white;
+        margin-top: 20px;
+        justify-content: space-between;
+            
+    }
+    .prdlftContainer a{
+        color: white;
+        text-decoration: none;
+        margin: 30px auto;
+    }
+    .prdrhtContainer
+    {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }

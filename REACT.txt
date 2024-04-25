@@ -78,7 +78,14 @@ npm install axios
 ROUTING
 ===================================================
 npm install react-router-dom
-BOOTSTRAP
+IN index.js
+==================================================================
+import {BrowserRouter} from 'react-router-dom'
+ReactDOM.render(
+    <BrowserRouter>
+<App/>
+</BrowserRouter>,
+document.getElementById("root"));BOOTSTRAP
 =================================================
 npm install bootstarp
 THEN GO TO App.js and add
