@@ -78,14 +78,7 @@ npm install axios
 ROUTING
 ===================================================
 npm install react-router-dom
-IN index.js
-==================================================================
-import {BrowserRouter} from 'react-router-dom'
-ReactDOM.render(
-    <BrowserRouter>
-<App/>
-</BrowserRouter>,
-document.getElementById("root"));BOOTSTRAP
+BOOTSTRAP
 =================================================
 npm install bootstarp
 THEN GO TO App.js and add
@@ -97,4 +90,22 @@ JSX
 JSX PROVIDE ALMOST 99% SIMNILAR TO HTML DESIGN 
 
 JSX====BABEL COMPILE
+CRA TOOL
+====================================================
+NPM==NODE PACKAGE MANAGER======INSTALL
+NPX===RUN CRA
+npx create-react-app appdemo
+
+
+
+
+
+
+
+
+
+
+
+
+
 

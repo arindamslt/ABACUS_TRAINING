@@ -126,8 +126,40 @@ WHEN WE WANT TO SHARE THE DATA BETWEN THE PARENT CHILD COMPONENT
 PROPS DRILLING
 ==========================================
 
+CONTEXT API
+====================================================================
+TO OVERCOME THE PROPS DRILLING WE WILL GO FOR CONTEXT API
 
-
+AXIOS
+=======================================================
+AXIOS LIBRARY IS USED FOR NETWORK CALL FOR API'S
+FIRST INSTALL AXIOS
+npm install axios
+METHODS
+============================================
+get()
+post()
+put()
+delete()
+========================================================================================
+DATE:26.04.2024
+====================================================================================
+USEEFFCT
+==========================================================================
+IT IS ANOTHER HOOK USED FOR DOING TASK WITHOUT CALLING A EVENT
+ROUTING
+================================================
+LINKING BETWEEN  COMPONENTS
+NESTED ROUTING
+==================================================
+CONDTIONAL RENDERING
+===================================================
+NEW PROJECT
+====================================================
+npx create-react-app bootreactapp
+npm install axios
+npm install react-router-dom
+npm install bootstrap
 
 
 
