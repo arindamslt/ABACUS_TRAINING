@@ -1,0 +1,48 @@
+VALIDATION CODE
+=============================================================
+ let[errors,setErrors]=useState({});
+=============================================================
+const validForm=()=>{
+  var isValid=true;
+  const errors={
+    "uname":"",
+    "pass":"",
+     "email":"",
+     "phno":""
+  }
+  if(register.uname.trim().length<6){
+    errors.uname="USERNAME ATLEAST 5 CHARECTER LONG";
+    isValid=false;
+
+  }
+  if(register.pass.trim().length<=6){
+    errors.pass="USERNAME ATLEAST 6 CHARECTER LONG";
+    isValid=false;
+
+  }
+  if(register.email.trim().length<=0){
+    errors.email="EMAIL MUST GE GIVEN";
+    isValid=false;
+
+  }
+  if(register.phno.trim().length<=0){
+    errors.phno="PHONE NO MUST GE GIVEN";
+    isValid=false;
+
+  }
+  if(register.nm.trim().length<=0){
+    errors.nm="NAME MUST GE GIVEN";
+    isValid=false;
+
+  }
+  setErrors(errors);
+  return isValid;
+}
+======================================================
+ onClick={()=>{
+        if(validForm()===true)
+        {
+          addData();
+        }
+       }}
+================================================================
